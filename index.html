@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEONID GRIVKO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6D2C3B', // Deep Burgundy
+              background: '#1F1D1D', // Dark Charcoal
+              backgroundLight: '#D3C5B5', // Warm Beige
+              surface: '#F5F0EB', // Off-white for inputs
+              textOnDark: '#F5F0EB', // Off-white text
+              textOnLight: '#1F1D1D', // Dark Charcoal text
+              textSecondaryOnDark: '#A9A9A9', // Muted Gray on dark
+              textSecondaryOnLight: '#5c5a5a', // Muted dark on light
+            },
+            fontFamily: {
+              'sans': ['Jost', 'sans-serif'],
+              'serif': ['Cormorant Garamond', 'serif'],
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1F1D1D;
+        color: #F5F0EB;
+        font-family: 'Jost', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 0.01em;
+      }
+      ::selection {
+        background-color: #6D2C3B;
+        color: #F5F0EB;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1F1D1D;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #D3C5B5;
+        border-radius: 10px;
+        border: 2px solid #1F1D1D;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0",
+    "gsap/ScrollTrigger": "https://aistudiocdn.com/gsap@^3.13.0/ScrollTrigger.js",
+    "gsap/": "https://aistudiocdn.com/gsap@^3.13.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
